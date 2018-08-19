@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    
+    {{ result|safe }}
+    <h1>Emails Addresses Entered: </h1>
+    {{ entered|safe }}
 </body>
 </html>

@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <a href="/">Index</a>
+    <br><br>
     {{ result|safe }}
     <h1>Emails Addresses Entered: </h1>
     {{ entered|safe }}
+    <form action="/delete">
+        <input type="submit" value="Reset">
+    </form>
 </body>
 </html>
